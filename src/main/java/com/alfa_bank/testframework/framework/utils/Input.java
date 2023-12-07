@@ -1,6 +1,7 @@
 package com.alfa_bank.testframework.framework.utils;
 
 import org.openqa.selenium.WebElement;
+
 public class Input extends AbstractGuiElement {
 
     public void clearAndType(WebElement webElement, String text) {
