@@ -38,3 +38,7 @@ build/
 
 # Ignore Allure results directory
 .allure-results/**
+
+# Ignore log files and directories
+logs/
+*.log
