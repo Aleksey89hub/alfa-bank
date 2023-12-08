@@ -37,4 +37,3 @@ build/
 .DS_Store
 
 # Ignore Allure results directory
-.allure-results/

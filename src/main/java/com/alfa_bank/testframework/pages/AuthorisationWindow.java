@@ -16,22 +16,22 @@ import static com.alfa_bank.testframework.enums.AuthorisationFields.USERNAME;
 
 public class AuthorisationWindow extends Input {
 
-    @FindBy(xpath = "//android.widget.TextView[@resource-id='com.alfabank.qapp:id/tvTitle']")
+    @FindBy(xpath = "//android.widget.TextView[contains(@resource-id, 'tvTitle')]")
     private WebElement logoLabel;
 
-    @FindBy(xpath = "//android.widget.EditText[@resource-id='com.alfabank.qapp:id/etUsername']")
+    @FindBy(xpath = " //android.widget.EditText[contains(@resource-id, 'etUsername')]")
     private WebElement loginInputField;
 
-    @FindBy(xpath = "//android.widget.EditText[@resource-id='com.alfabank.qapp:id/etPassword']")
+    @FindBy(xpath = "//android.widget.EditText[contains(@resource-id, 'etPassword')]")
     private WebElement passwordInputField;
 
-    @FindBy(xpath = "//android.widget.Button[@resource-id='com.alfabank.qapp:id/btnConfirm']")
+    @FindBy(xpath = "//android.widget.Button[contains(@resource-id, 'btnConfirm')]")
     private WebElement submitButton;
 
     @FindBy(xpath = "//android.widget.ImageButton[@content-desc='Show password']")
     private WebElement showPasswordButton;
 
-    @FindBy(xpath = "//android.widget.TextView[@resource-id='com.alfabank.qapp:id/tvError']")
+    @FindBy(xpath = "//android.widget.TextView[contains(@resource-id, 'tvError')]")
     private WebElement errorMessage;
 
     private WebElement generateInputField(String fieldName) {
