@@ -54,5 +54,4 @@ public class VerifyPasswordInputFieldTest extends PrepareDataFotAuthorizationFea
         SOFT_ASSERT.assertEquals(AUTHORISATION_WINDOW.getErrorMessage(), EXCEPT_VALUE, String.format(ERROR_SHOULD_BE_SHOWN + issue, EXCEPT_VALUE));
         SOFT_ASSERT.assertAll();
     }
-
 }
