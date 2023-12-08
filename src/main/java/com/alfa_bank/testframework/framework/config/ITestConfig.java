@@ -13,8 +13,6 @@ public interface ITestConfig extends Config {
     Platform platform();
     String adminName();
     String adminPassword();
-
     String userName();
-
     String userPassword();
 }

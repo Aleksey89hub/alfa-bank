@@ -51,7 +51,6 @@ public class AuthorisationWindow extends Input {
         return logoLabel.isDisplayed();
     }
 
-
     @Step("Get logo of Alfa bank")
     public String getAlfaBankLogo() {
         waitUntil(() -> loginInputField.isDisplayed());

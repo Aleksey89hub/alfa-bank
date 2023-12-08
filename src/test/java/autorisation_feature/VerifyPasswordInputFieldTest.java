@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 import static com.alfa_bank.testframework.enums.AuthorisationFields.PASSWORD;
 import static com.alfa_bank.testframework.enums.AuthorisationFields.USERNAME;
 
-
 @Owner(PrepareDataFotAuthorizationFeature.ZOKAS_ALEX)
 @Feature(PrepareDataFotAuthorizationFeature.AUTHORISATION_FEATURE)
 public class VerifyPasswordInputFieldTest extends PrepareDataFotAuthorizationFeature {
