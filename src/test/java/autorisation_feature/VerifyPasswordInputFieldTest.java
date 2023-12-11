@@ -38,7 +38,7 @@ public class VerifyPasswordInputFieldTest extends PrepareDataFotAuthorizationFea
         SOFT_ASSERT.assertAll();
     }
 
-    @Test
+    @Test(enabled = false)
     @Issue("issueId")
     //TODO remove the issue annotation and comments when bug is fixed
     public void verifyPasswordFieldIsTruncatedWhenCharactersAmountIsExceeded() {

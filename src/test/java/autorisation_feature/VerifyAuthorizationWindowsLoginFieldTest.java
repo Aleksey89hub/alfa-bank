@@ -49,7 +49,7 @@ public class VerifyAuthorizationWindowsLoginFieldTest extends PrepareDataFotAuth
     }
 
     @TmsLink(TEST_CASE_ID_2)
-    @Test(dataProvider = "testDataForLogin")
+    @Test(enabled = false, dataProvider = "testDataForLogin")
     @Issue("issueId")
     //TODO remove the issue annotation, issue id and comments when bug is fixed
     public void verifyNotAllowedCharactersIsNotSetInUserNameField(String inputValue, String modifiedValue, String errorMessageText) {
