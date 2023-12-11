@@ -33,14 +33,14 @@ public class VerifyAuthorizationWindowsLoginFieldTest extends PrepareDataFotAuth
     }
 
     @TmsLink(TEST_CASE_ID_2)
-    @Test(dependsOnMethods = "verifyAlfaBankLogoIsDisplayed", alwaysRun = true)
+    @Test
     public void verifyLoggInFieldIsEmptyBeforeInteraction() {
         Assert.assertFalse(AUTHORISATION_WINDOW.getTextFromElement(USERNAME).isEmpty(),
                 "The login input field should be empty");
     }
 
     @TmsLink(TEST_CASE_ID_2)
-    @Test(dependsOnMethods = "verifyLoggInFieldIsEmptyBeforeInteraction", alwaysRun = true)
+    @Test
     public void verifyAllowedCharactersSetInUserNameField() {
         AUTHORISATION_WINDOW.setTextValuesToInputFields(USERNAME, GENERATED_STRING_WITH_ALLOWED_CHARACTERS);
 
@@ -49,7 +49,7 @@ public class VerifyAuthorizationWindowsLoginFieldTest extends PrepareDataFotAuth
     }
 
     @TmsLink(TEST_CASE_ID_2)
-    @Test(dataProvider = "testDataForLogin", dependsOnMethods = "verifyAllowedCharactersSetInUserNameField", alwaysRun = true)
+    @Test(dataProvider = "testDataForLogin")
     @Issue("issueId")
     //TODO remove the issue annotation, issue id and comments when bug is fixed
     public void verifyNotAllowedCharactersIsNotSetInUserNameField(String inputValue, String modifiedValue, String errorMessageText) {
